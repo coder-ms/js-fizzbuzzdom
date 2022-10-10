@@ -12,26 +12,54 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 */
 
-    for(let number=1; number < 101; number++){
-        // Stampo numeri da 1 a 100 in console
 
-        // Verifico se i è multiplo di 3 e 5
-        if(number % 3 == 0 &&  number % 5 == 0){
-           console.log("FizzBuzz");
-        }
-        // Verifico se i è multiplo di 3
-        else if(number % 3 === 0){
-            console.log("Fizz");
-        }    
-        // Verifico se i è multiplo di 5
-        else if(number % 5 === 0){
-            console.log("Buzz");
-        }      
-        // Se i non è multiplo di 3 e di 5, stampo in console il numero
-        else{
-            console.log(number);
-        } 
+let html = '';
+const ul = document.querySelector("ul.list");
+
+const tagLi = document.createElement('li');
+
+for(let number=1; number <= 100; number++){
+    // Stampo numeri da 1 a 100 in console
+
+    // Verifico se i è multiplo di 3 e 5
+    if(number % 3 == 0 && number % 5 == 0){
+        console.log("FizzBuzz");
+        const tagLi = document.createElement('li');
+        tagLi.className = `box--${number}`;
+        tagLi.append(`${"FizzBuzz"}`);
+    
+        ul.append(tagLi);
     }
+    // Verifico se i è multiplo di 3
+    else if(number % 3 === 0){
+        console.log("Fizz");
+        const tagLi = document.createElement('li');
+        tagLi.className = `box--${number}`;
+        tagLi.append(`${"Fizz"}`);
+    
+        ul.append(tagLi);
+    }    
+    // Verifico se i è multiplo di 5
+    else if(number % 5 === 0){
+        console.log("Buzz");
+        const tagLi = document.createElement('li');
+        tagLi.className = `box--${number}`;
+        tagLi.append(`${"Buzz"}`);
+    
+        ul.append(tagLi);
+    }      
+    // Se i non è multiplo di 3 e di 5, stampo in console il numero
+    else{
+        console.log(number);
+        const tagLi = document.createElement('li');
+        tagLi.className = `box--${number}`;
+        tagLi.append(`${number}`);
+    
+        ul.append(tagLi);
+    } 
+
+}
 
 
+    
 
