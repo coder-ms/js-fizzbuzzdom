@@ -30,88 +30,16 @@ main{
     padding: 80px;
 }
 
-/*OTHER STUFF*/
-.bold{
-    font-weight: 600;
-    text-align: right;
-    padding: 5px;
+.red{
+    color: red;
 }
-.p-10{
-    padding: 20px;
+.blue{
+    color: blue;
 }
-.p-40{
-    padding: 40px;
+.green{
+    color: green;
 }
-.p-20{
-    padding:0 20px;
+.grey{
+    color: grey;
 }
-.pt-20{
-    padding-top: 20px;
-}
-.m-40{
-    margin-left: 40px;
-}
-.m-60{
-    margin: 0 60px;
-}
-.mt-20{
-    margin-top: 20px;
-}
-
-/*BG-COLORS*/
-.mybg-darkblack{
-    background-color: var(--darkblack);
-}
-.mybg-black{
-    background-color: var(--black);
-}
-.mybg-red{
-    background-color: var(--red);
-}
-.mybg-light-grey{
-    background-color: var(--light-grey);
-}
-.mybg-grey{
-    background-color: var(--grey);
-}
-.mybg-dark-blue{
-    background-color: var(--dark-blue);
-}
-.mybg-blue{
-    background-color: var(--blue);
-}
-.mybg-lavish-white{
-    background-color: var(--lavish-white);
-}
-
-/*COLORS*/
-.c-darkblack{
-    color: var(--darkblack);
-}
-.c-black{
-    color: var(--black);
-}
-.c-red{
-    color: var(--red);
-}
-.c-light-grey{
-    color: var(--light-grey);
-}
-.c-dark-blue{
-    color: var(--dark-blue);
-}
-.c-blue{
-    color: var(--blue);
-}
-.c-lavish-white{
-    color: var(--lavish-white);
-}
-/* FONT-SIZE */
-.fz-075rem{
-    font-size: 0.75rem;
-}
-.fz-1rem{
-    font-size: 1rem;
-}
-
 

@@ -24,38 +24,72 @@ for(let number=1; number <= 100; number++){
     // Verifico se i è multiplo di 3 e 5
     if(number % 3 == 0 && number % 5 == 0){
         console.log("FizzBuzz");
+
+        // Aggiungo attraverso la funzione append() la stringa 'FizzBuzz' per i numeri multipli di 3 e 5
         const tagLi = document.createElement('li');
         tagLi.className = `box--${number}`;
         tagLi.append(`${"FizzBuzz"}`);
     
         ul.append(tagLi);
+
+        // Creo uno stile per la stringa 'FizzBuzz'
+        const element = `<li class="red red--${number}">${"FizzBuzz"}</li>`;
+        html += element;
+        console.log(html);
+        ul.innerHTML = html;
     }
+
     // Verifico se i è multiplo di 3
     else if(number % 3 === 0){
         console.log("Fizz");
+        // Aggiungo attraverso la funzione append() la stringa 'Fizz' per i numeri multipli di 3
         const tagLi = document.createElement('li');
         tagLi.className = `box--${number}`;
         tagLi.append(`${"Fizz"}`);
     
         ul.append(tagLi);
-    }    
+
+        // Creo uno stile per la stringa 'Fizz'
+        const element = `<li class="blue blue--${number}">${"Fizz"}</li>`;
+        html += element;
+        console.log(html);
+        ul.innerHTML = html;
+
+    }  
+
     // Verifico se i è multiplo di 5
     else if(number % 5 === 0){
         console.log("Buzz");
+
+        // Aggiungo attraverso la funzione append() la stringa 'Buzz' per i numeri multipli di 5
         const tagLi = document.createElement('li');
         tagLi.className = `box--${number}`;
         tagLi.append(`${"Buzz"}`);
     
         ul.append(tagLi);
-    }      
+        // Creo uno stile per la stringa 'Buzz'
+        const element = `<li class="green green--${number}">${"Buzz"}</li>`;
+        html += element;
+        console.log(html);
+        ul.innerHTML = html;
+    }
+
     // Se i non è multiplo di 3 e di 5, stampo in console il numero
     else{
         console.log(number);
+
+        // Aggiungo attraverso la funzione append() i numeri non multipli di 3 o di 5  
         const tagLi = document.createElement('li');
         tagLi.className = `box--${number}`;
         tagLi.append(`${number}`);
     
         ul.append(tagLi);
+
+        // Creo uno stile per per i numeri rimanenti
+        const element = `<li class="grey grey--${number}">${number}</li>`;
+        html += element;
+        console.log(html);
+        ul.innerHTML = html;
     } 
 
 }
