@@ -27,19 +27,59 @@ body{
 main{
     width: 80%;
     margin: 0 auto;
-    padding: 80px;
 }
 
-.red{
+h1, h2, h3, a{
+    color: darkred;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.redFizzBuzz{
     color: red;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.blue{
+.blueFizz{
     color: blue;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.green{
+.greenBuzz{
     color: green;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.grey{
+.greyNumber{
     color: grey;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin: 25px 0;
+}
+
+ul li:hover{
+    border: 3px solid var(--dark-blue);
+    transform: scale(1.6);
 }
 

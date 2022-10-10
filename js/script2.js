@@ -14,9 +14,9 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 
 let html = '';
-const ul = document.querySelector("ul.list");
+const section = document.querySelector("section.receptacle");
 
-const tagLi = document.createElement('li');
+const tagDiv = document.createElement('div');
 
 for(let number=1; number <= 100; number++){
     // Stampo numeri da 1 a 100 in console
@@ -26,34 +26,34 @@ for(let number=1; number <= 100; number++){
         console.log("FizzBuzz");
 
         // Aggiungo attraverso la funzione append() la stringa 'FizzBuzz' per i numeri multipli di 3 e 5
-        const tagLi = document.createElement('li');
-        tagLi.className = `box--${number}`;
-        tagLi.append(`${"FizzBuzz"}`);
+        const tagDiv = document.createElement('div');
+        tagDiv.className = `box--${number}`;
+        tagDiv.append(`${"FizzBuzz"}`);
     
-        ul.append(tagLi);
+        section.append(tagDiv);
 
         // Creo uno stile per la stringa 'FizzBuzz'
-        const element = `<li class="redFizzBuzz redFizzBuzz--${number}">${"FizzBuzz"}</li>`;
+        const element = `<div class="redFizzBuzz redFizzBuzz--${number}">${"FizzBuzz"}</div>`;
         html += element;
         console.log(html);
-        ul.innerHTML = html;
+        section.innerHTML = html;
     }
 
     // Verifico se i è multiplo di 3
     else if(number % 3 === 0){
         console.log("Fizz");
         // Aggiungo attraverso la funzione append() la stringa 'Fizz' per i numeri multipli di 3
-        const tagLi = document.createElement('li');
-        tagLi.className = `box--${number}`;
-        tagLi.append(`${"Fizz"}`);
+        const tagDiv = document.createElement('div');
+        tagDiv.className = `box--${number}`;
+        tagDiv.append(`${"Fizz"}`);
     
-        ul.append(tagLi);
+        section.append(tagDiv);
 
         // Creo uno stile per la stringa 'Fizz'
-        const element = `<li class="blueFizz blueFizz--${number}">${"Fizz"}</li>`;
+        const element = `<div class="blueFizz blueFizz--${number}">${"Fizz"}</div>`;
         html += element;
         console.log(html);
-        ul.innerHTML = html;
+        section.innerHTML = html;
 
     }  
 
@@ -62,16 +62,16 @@ for(let number=1; number <= 100; number++){
         console.log("Buzz");
 
         // Aggiungo attraverso la funzione append() la stringa 'Buzz' per i numeri multipli di 5
-        const tagLi = document.createElement('li');
-        tagLi.className = `box--${number}`;
-        tagLi.append(`${"Buzz"}`);
+        const tagDiv = document.createElement('div');
+        tagDiv.className = `box--${number}`;
+        tagDiv.append(`${"Buzz"}`);
     
-        ul.append(tagLi);
+        section.append(tagDiv);
         // Creo uno stile per la stringa 'Buzz'
-        const element = `<li class="greenBuzz greenBuzz--${number}">${"Buzz"}</li>`;
+        const element = `<div class="greenBuzz greenBuzz--${number}">${"Buzz"}</div>`;
         html += element;
         console.log(html);
-        ul.innerHTML = html;
+        section.innerHTML = html;
     }
 
     // Se i non è multiplo di 3 e di 5, stampo in console il numero
@@ -79,17 +79,17 @@ for(let number=1; number <= 100; number++){
         console.log(number);
 
         // Aggiungo attraverso la funzione append() i numeri non multipli di 3 o di 5  
-        const tagLi = document.createElement('li');
-        tagLi.className = `box--${number}`;
-        tagLi.append(`${number}`);
+        const tagDiv = document.createElement('div');
+        tagDiv.className = `box--${number}`;
+        tagDiv.append(`${number}`);
     
-        ul.append(tagLi);
+        section.append(tagDiv);
 
         // Creo uno stile per per i numeri rimanenti
-        const element = `<li class="greyNumber greyNumber--${number}">${number}</li>`;
+        const element = `<div class="greyNumber greyNumber--${number}">${number}</div>`;
         html += element;
         console.log(html);
-        ul.innerHTML = html;
+        section.innerHTML = html;
     } 
 }
 

@@ -1,0 +1,96 @@
+/*COMMON*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;    
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --darkblack: rgba(0, 0, 0, 1);
+    --black: rgba(31, 31, 31, 1);
+    --blue: rgba(58, 109, 231, 1);
+    --light-grey: rgba(190, 188, 187, 1);
+    --grey: rgba(66, 66, 66, 1);
+    --dark-blue: rgba(28, 28, 59, 1);
+    --red: rgba(255, 0, 15, 1);
+    --lavish-white: rgba(217, 218, 220, 1);
+}
+.debug{
+    border: 1px solid black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    color: darkred;
+    text-align: center;
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+.redFizzBuzz{
+    color: red;
+}
+.blueFizz{
+    color: blue;
+}
+.greenBuzz{
+    color: green;
+}
+.greyNumber{
+    color: grey;
+}
+
+.redFizzBuzz, .blueFizz, .greenBuzz, .greyNumber{
+    margin: 0 auto;
+    width: 10%;
+    height: 120px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receptacle{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div:hover{
+    border-radius: 100%;
+    transition: all 5s linear;
+    border: 1px solid royalblue;
+    animation-name: round-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes round-rotate {
+    0%   {rotate: 0.5rad; color: #00ff00;}
+    10%  {rotate: 1rad; color: #9dff00;}
+    20%  {rotate: 1.5rad; color: #bbff00;}
+    30%  {rotate: 2rad; color: #ffe600;}
+    40%  {rotate: 2.5rad; color: #ff8800;}
+    50%  {rotate: 3rad; color: #ff6600;}
+    60%  {rotate: 3.14rad; color: #ff0000;}
+    70%  {rotate: 3.5rad; color: #ff0040;}
+    80%  {rotate: 4rad; color: #6f00ff;}
+    90%  {rotate: 4.71rad; color: #4400ff;}
+    100% {rotate: 0rad; color: #00eeff;}
+}
